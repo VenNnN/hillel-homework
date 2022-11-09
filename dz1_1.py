@@ -20,7 +20,6 @@ subprocess.run(command, shell=True)
 subprocess.run('sudo chown -R root ./dz1/', shell=True)
 
 randNum = random.sample(range(1, calendar.monthrange(datetime.now().year, datetime.now().month)[1] + 1), 5)
-print()
 for num in randNum:
     command = 'rm ./dz1/'
     if num < 10:
